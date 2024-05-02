@@ -14,6 +14,10 @@ while True:
 
         todos = functions.get_todos()
 
+        if todo in todos:
+            print("This todo already added")
+            continue
+
         todos.append(todo + "\n")
 
         functions.write_todos(todos,)
